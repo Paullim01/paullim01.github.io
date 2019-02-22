@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>three.js css3d - youtube</title>
+		<title>Youtube</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<style>
@@ -22,7 +22,7 @@
 		<script src="js/three.js"></script>
 		<script src="js/controls/TrackballControls.js"></script>
 		<script src="js/renderers/CSS3DRenderer.js"></script>
-
+		
 		<div id="container"></div>
 		<div id="blocker"></div>
 
@@ -34,13 +34,13 @@
 			var Element = function ( id, x, y, z, ry ) {
 
 				var div = document.createElement( 'div' );
-				div.style.width = '480px';
-				div.style.height = '360px';
+				div.style.width = '580px';
+				div.style.height = '460px';
 				div.style.backgroundColor = '#000';
 
 				var iframe = document.createElement( 'iframe' );
-				iframe.style.width = '480px';
-				iframe.style.height = '360px';
+				iframe.style.width = '580px';
+				iframe.style.height = '460px';
 				iframe.style.border = '0px';
 				iframe.src = [ 'https://www.youtube.com/embed/', id, '?rel=0' ].join( '' );
 				div.appendChild( iframe );
@@ -61,7 +61,7 @@
 				var container = document.getElementById( 'container' );
 
 				camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 1, 5000 );
-				camera.position.set( 500, 350, 750 );
+				camera.position.set( 0, 0, 1000 );
 
 				scene = new THREE.Scene();
 
@@ -70,14 +70,14 @@
 				container.appendChild( renderer.domElement );
 
 				var group = new THREE.Group();
-				group.add( new Element( 'SJOz3qjfQXU', 0, 0, 240, 0 ) );
-				group.add( new Element( 'Y2-xZ-1HE-Q', 240, 0, 0, Math.PI / 2 ) );
-				group.add( new Element( 'IrydklNpcFI', 0, 0, - 240, Math.PI ) );
-				group.add( new Element( '9ubytEsCaS0', - 240, 0, 0, - Math.PI / 2 ) );
+				group.add( new Element( 'XY-hOqcPGCY', 0, 0, 290, 0 ) );
+				group.add( new Element( 'qfxoHNtXpZk', 290, 0, 0, Math.PI / 2 ) );
+				group.add( new Element( '3ukLLCtdUU4', 0, 0, - 290, Math.PI ) );
+				group.add( new Element( 'o0evWTegaKo', - 290, 0, 0, - Math.PI / 2 ) );
 				scene.add( group );
 
 				controls = new THREE.TrackballControls( camera );
-				controls.rotateSpeed = 4;
+				controls.rotateSpeed = 1;
 
 				window.addEventListener( 'resize', onWindowResize, false );
 
