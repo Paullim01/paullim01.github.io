@@ -1,0 +1,141 @@
+body, html {
+    text-align: center;
+	overflow-x: hidden;
+	min-height: 100vh;
+}
+
+/* Navbar */
+ 
+.navbar {
+	width: 100vw;
+	height: 18vh;
+	background: rgba(0, 0, 0, 0.01);
+	position: fixed;
+	z-index: 2;
+}
+
+@media (max-width: 34em) {
+	.navbar {
+		background: rgba(0, 0, 0);
+	}
+}
+
+.navbar.black {
+	background: rgba(0,0,0,0.9);
+	height: 13vh;
+	padding: 10px 50px;
+	transition: 1s;
+}
+
+.navbar .nav-link {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.navbar .nav-item {
+	padding: 0 1rem;
+}
+
+@media (max-width: 34em) {
+	.navbar .nav-item {
+		padding: 0;
+	}
+}
+
+.navbar-collapse.collapse.show {
+	background: rgba(0, 0, 0, 0.63)
+}
+
+
+/* Hero & Particle */
+
+#particle {
+    position: absolute;
+    height: 100vh;
+    transform: translate(-2%, 0%);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 900px) {
+    #particle {
+        display: none;
+    }
+}
+
+.home-image .container-fluid {
+    width: 100vw;
+    height: 100vh;
+    background: url('image/1.jpg');
+    background-position: center;
+	background-size:cover;
+	
+}
+
+.home-image, h1 h5 {
+    text-shadow:2px 2px #333; 
+}
+
+.home-image, h1 {
+    font-size: 2.5em;
+}
+
+
+/* Projects & Card */
+
+.projects .container-fluid {
+	width: 100vw;
+    height: 100vh;
+    background-color: black;
+    background-position: center;
+	background-size:cover;
+}
+
+.projects h1 {
+    text-shadow:2px 2px #333; 
+}
+
+.card {
+	border-width: 0px;
+}
+
+.card a{
+	text-decoration: none;
+	color: #000;
+	cursor: pointer;
+}
+
+.card:hover {
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+}
+
+
+/* About */
+
+.about {
+	width: 100vw;
+	height: 100vh;
+	background: url('');
+    background-position: center;
+	background-size:cover;
+}
+
+.about h1, h2 {
+	text-shadow: 1px 1px black;
+}
+
+.about h2, p {
+	color: rgb(97, 97, 97);
+}
+
+
+
+/* Footer */
+
+.footer-container { 
+	background: #333;
+	height: 15vh;
+}
+
+
+
