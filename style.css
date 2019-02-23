@@ -1,7 +1,6 @@
 body, html {
     text-align: center;
 	overflow-x: hidden;
-	min-height: 100vh;
 }
 
 /* Navbar */
@@ -82,9 +81,7 @@ body, html {
 
 /* Projects & Card */
 
-.projects .container-fluid {
-	width: 100vw;
-    height: 100vh;
+.projects {	
     background-color: black;
     background-position: center;
 	background-size:cover;
@@ -114,7 +111,6 @@ body, html {
 
 .about {
 	width: 100vw;
-	height: 100vh;
 	background: url('');
     background-position: center;
 	background-size:cover;
@@ -129,13 +125,19 @@ body, html {
 }
 
 
-
 /* Footer */
 
-.footer-container { 
+.footer { 
 	background: #333;
-	height: 15vh;
+	height: 100px;
+	padding-top:10px;
 }
 
+.social .ins-ic {
+	text-decoration: none;
+}
 
+.social .fb-ic {
+	text-decoration: none;
+}
 
