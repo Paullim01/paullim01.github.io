@@ -59,6 +59,7 @@ body, html {
 	font-weight: 900;
 	color: #ce4233;
 	letter-spacing: 0.2em;
+	z-index: 100;
 }
 .loader::before, .loader::after {
 	content: "";
