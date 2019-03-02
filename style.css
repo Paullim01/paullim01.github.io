@@ -59,7 +59,7 @@ body, html {
 	font-family: helvetica, arial, sans-serif;
 	text-transform: uppercase;
 	font-weight: 900;
-	color: #ce4233;
+	color: #2530c7;
 	letter-spacing: 0.2em;
 	z-index: 100;
 }
@@ -125,7 +125,7 @@ body, html {
  
 .navbar {
 	width: 100vw;
-	height: 18vh;
+	height: 15vh;
 	background: rgba(0, 0, 0, 0.01);
 	position: fixed;
 	z-index: 2;
@@ -139,8 +139,7 @@ body, html {
 
 .navbar.black {
 	background: rgba(0,0,0,0.9);
-	height: 13vh;
-	padding: 10px 50px;
+	height: 7vh;	
 	transition: 1s;
 }
 
